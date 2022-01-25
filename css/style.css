@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&display=swap');
+/* RESET */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* CSS STARTS */
+body{
+  background: #fff;
+  color: #333;
+  line-height: 1.6 ;
+  font-family: 'Open Sans', sans-serif; 
+}
+ul{
+  list-style: none;
+}
+ a{
+   text-decoration: none;
+   color: #333;
+ } 
+h1,h2{
+  font-weight: 300;
+  line-height: 1.2;
+}
+p{
+  margin: 10px 0;
+}
+img{
+  width: 100%;
+}
+/* NAVIGATION BAR */
+.logo{
+  font-family: 'Monoton', cursive;
+  color: #fff;
+  font-size: 40px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.812);
+  /* opacity: 0.8; */
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  /* border-bottom: rgba(255, 255, 255, 0.555) 1px solid; */
+  transition: 1s ease-in;
+}
+.navbarlight{
+
+}
+body{
+  max-width: 1100px;
+}
+.navbar a{
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  
+}
+.navbar a:hover{
+  border-bottom: #D28774 1px solid;
+}
+.navbar ul{
+  display: flex;
+}
+.navbar.top{
+  background: transparent;
+}
+
+/* Header */
+.hero{
+  background: url(../img/pexels-photo-276724.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.hero.blog {
+  background: url(../img/blog\ hero.jpg) no-repeat center center/cover;
+  height: 40vh;
+}
+.hero .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  height: 100%;
+  align-items: center;
+  padding: 20px;
+  
+}
+.hero .content p{
+  font-size: 16px;
+}
+.hero .content h1{
+  font-size: 80px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:600 ;
+  letter-spacing: 2px;
+}
+ 
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.hero *{
+  z-index: 10;
+}
+/* SERVICES */
+.icons{
+  padding: 30px;
+}
+.icons h3{
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+.icons i{
+  background-color: #D28774;
+  color: #fff;
+  padding: 18px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+/* ABOUT */
+.column-2{
+color: white;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding: 35px;
+} 
+.column-2 h1{
+  padding: 9px 0;
+  color: black;
+}
+.column-2 p{
+ margin: 12px 0;
+}
+.cases .column  img:hover{
+  opacity: 0.7;
+}
+.column img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  
+}
+.team img{
+    border-radius: 50%;
+    width: 100%;
+    height:80%;
+    margin: 14px;
+}
+.form{
+  color: #333;
+}
+#form{
+  width: 100%;
+  padding: 20px;
+} 
+.form input,.form textarea{
+  width: 100%;
+  font-size: 16px;
+  padding: 1px ;
+}
+.soon{
+  font-size: 15px;
+  color: black;
+}
+.contacthead{
+  text-align: center;
+  margin: auto;
+}
+.footer{
+  text-align: center;
+
+}
+.footer i{
+  font-size: 30px;
+  padding: 30px 20px;
+  color: #D28774;
+}
+.footer p{
+  color: #fff;
+  padding-bottom: 10px;
+}
+.flex-columns imG{
+  height: 100%;
+ 
+}
+.post{
+  padding: 20px 40px;
+  margin-top: 10px;
+}
+.posthead{
+  text-align: center;
+}
+.posthead img{
+  width: 35%;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+/* MOBILE */
+
+@media(max-width: 768px){
+  .posthead img{
+    width: 85%;
+    border-radius: 50%;
+    margin: 15px;
+  }
+  
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+  }
+  .navbar a{
+    padding: 15px 15px;
+    padding-bottom: 10px;
+  margin: 0;
+  
+  }
+  .flex-items{
+    flex-direction: column;
+  }
+ 
+  .flex-items{
+    flex-direction: column;
+  }
+  #blog .row{
+
+    flex-direction: column-reverse;
+  }
+  .flex-columns .row{
+    flex-direction: column;
+  }
+  .flex-grid .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+
+ .flex-columns{
+  
+}
+
+ 
+}
+@media(max-width: 385px){
+  .navbar a{
+    padding: 15px 9px;
+    padding-bottom: 10px;
+  }
+}
